@@ -1,51 +1,168 @@
 @font-face {
-    font-family: "Montserrat-Medium";
-    src: url("../fonts/Montserrat-Medium.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-  @font-face {
-    font-family: "Montserrat-Bold";
-    src: url("../fonts/Montserrat-Bold.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Montserrat-ExtraBold";
-    src: url("../fonts/Montserrat-ExtraBold.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Montserrat-SemiBold";
-    src: url("../fonts/Montserrat-SemiBold.ttf");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-color: #efefef;
-  }
-
-  .menu {
-    font-family: "Montserrat-Medium";
-    font-size: 1.5vw;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #efefef;
+  overflow-y: hidden;
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  font-family: "Montserrat-Medium";
+  font-size: 25px;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.logo-header {
+  width: 150px;
+}
+.shape {
+  width: 35px;
+  height: 6px;
+  position:relative;
+  display: block;
+  background-color: black;
+}
+.shape::before {
+  content: "";
+  background-color: black;
+  width: 35px;
+  height: 6px;
+  position: absolute;
+  top: 10px;
+}
+  .shape::after {
+    content: "";
+    background-color: black;
+    width: 35px;
+    height: 6px;
+    position: absolute;
+    bottom: 10px;}
+    .header {
+      width: 100%;
+      margin-top: 25px;
+    }
+  .container {
     display: flex;
+    margin: 0 auto;
+    max-width: 1490px;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 37px;
+    padding-right: 37px;
+    
   }
+  .href {
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .text-container>*:first-child {
+    font-family:'Montserrat-Regular';
+    font-size: 20px;
+  }
+
+  .text-container>*:last-child {
+    font-family:'Montserrat-ExtraBold';
+    font-size: 16px;
+  }
+.text-container {
+  width: 300px;
+  position: absolute;
+
+  top: 140px;
+}
+.main {
+  width: 100%;
+  min-height: 600px;
+
+}
+.main-container {
+  max-width: 1242px;
+  margin: 0 auto;
+  position: relative;
+}
+.circle {
+  width: 600px;
+  position: absolute;
+  left: calc(50% - 600px/2);
+  top:48px;
+
+
+}
+.human {
+  width: 305px;
+  position: absolute;
+  left: calc(50% - 305px/2);
+  top: 70px;
+}
+.title-main {
+  font-size: 123px;
+  font-family: 'Montserrat-Bold';
+  position: absolute;
+  width: 384px;
+  line-height:80%;
+  left:calc(50% + 160px);
+  top: 290px;
+}
+
+.footer {
+  max-width: 1490px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 37px;
+  padding-right: 37px;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+
+.icon {
+  width: 50px;
+}
+
+.author {
+  font-family:'Montserrat-SemiBold';
+  font-size: 12px;
+}
