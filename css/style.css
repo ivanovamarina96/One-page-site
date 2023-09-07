@@ -172,6 +172,10 @@ a {
   .main {
   min-height: 85vh;
   }
+  .human {
+  width: 27vw;
+  left: calc(50% - 27vw/2);
+  
 }
 
 
@@ -179,10 +183,11 @@ a {
   .main {
     min-height: 80vh;
 }
+  
 
 .human {
   width: 25vw;
-  left: calc(50% - 24vw/2);
+  left: calc(50% - 25vw/2);
   top: 102px;
 }
 .circle {
