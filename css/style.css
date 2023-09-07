@@ -177,7 +177,7 @@ a {
   left: calc(50% - 27vw/2);
   
 }
-
+}
 
 @media (min-height: 1000px) {
   .main {
