@@ -181,7 +181,7 @@ a {
 }
 
 .human {
-  width: 24vw;
+  width: 25vw;
   left: calc(50% - 24vw/2);
   top: 102px;
 }
