@@ -39,7 +39,7 @@
   padding: 0;
 }
 body {
-  background-color: #efefef;
+  background-color: white;
   overflow-y: hidden;
 }
 a {
@@ -47,7 +47,7 @@ a {
 }
 .menu {
   font-family: "Montserrat-Medium";
-  font-size: 25px;
+  font-size: 1.6vw;
   display: flex;
   gap: 35px;
   justify-content: center;
@@ -85,7 +85,7 @@ a {
   .container {
     display: flex;
     margin: 0 auto;
-    max-width: 1490px;
+    max-width: 92%;
     align-items: center;
     box-sizing: border-box;
     padding-left: 37px;
@@ -100,55 +100,56 @@ a {
 
   .text-container>*:first-child {
     font-family:'Montserrat-Regular';
-    font-size: 20px;
+    font-size: 1.35vw;
   }
 
   .text-container>*:last-child {
     font-family:'Montserrat-ExtraBold';
-    font-size: 16px;
+    font-size: 1.1vw;
+    padding-top: 5px;
   }
 .text-container {
-  width: 300px;
+  width: 30%;
   position: absolute;
 
   top: 140px;
 }
 .main {
   width: 100%;
-  min-height: 600px;
+  min-height: 80vh;
 
 }
 .main-container {
-  max-width: 1242px;
+  width: 78%;
   margin: 0 auto;
   position: relative;
 }
 .circle {
-  width: 600px;
+  width: 40vw;
   position: absolute;
-  left: calc(50% - 600px/2);
+  left: calc(50% - 40vw/2);
   top:48px;
 
 
 }
 .human {
-  width: 305px;
+  width: 20vw;
   position: absolute;
-  left: calc(50% - 305px/2);
+  left: calc(50% - 20vw/2);
   top: 70px;
 }
 .title-main {
-  font-size: 123px;
+  font-size: 7vw;;
   font-family: 'Montserrat-Bold';
   position: absolute;
-  width: 384px;
+  min-width: 384px;
   line-height:80%;
-  left:calc(50% + 160px);
-  top: 290px;
+  left:64%;
+  top: 39vh;
 }
 
 .footer {
-  max-width: 1490px;
+  max-width: 92%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -159,10 +160,58 @@ a {
 }
 
 .icon {
-  width: 50px;
+  width: 4vw;
 }
 
 .author {
   font-family:'Montserrat-SemiBold';
-  font-size: 12px;
+  font-size: 1.5vw;
+}
+
+@media (min-height: 1500px) {
+  .main {
+  min-height: 85vh;
+  }
+}
+
+
+@media (min-height: 1000px) {
+  .main {
+    min-height: 80vh;
+}
+
+.human {
+  width: 24vw;
+  left: calc(50% - 24vw/2);
+  top: 102px;
+}
+.circle {
+  width: 45vw;
+  left: calc(50% - 45vw/2);
+
+}
+
+.href {
+  width: 250px;
+}
+
+.logo-header {
+  width: 250px;}
+
+
+  .shape {
+    width: 65px;}
+    .shape::before {
+      
+      width: 65px;
+      height: 8px;
+      top: 20px;
+      
+    }
+      .shape::after {
+      bottom: 20px; 
+      width: 65px;
+      height: 8px;}
+       
+
 }
